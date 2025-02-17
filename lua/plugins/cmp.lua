@@ -70,10 +70,6 @@ return {
 
 			local capabilities = require("cmp_nvim_lsp").default_capabilities()
 			local lspconfig = require("lspconfig")
-
-			-- Замените '<YOUR_LSP_SERVER>' на нужные LSP
-			-- lspconfig.tsserver.setup { capabilities = capabilities }
-			-- lspconfig.pyright.setup { capabilities = capabilities }
 		end,
 	},
 }

@@ -20,8 +20,6 @@ return {
 				null_ls.builtins.diagnostics.eslint_d,
 				-- Форматирование Lua с помощью stylua
 				null_ls.builtins.formatting.stylua,
-				-- LTRS для проверки грамматики
-				-- null_ls.builtins.diagnostics.ltrs,
 				-- PrettierD для форматирования различных файлов
 				null_ls.builtins.formatting.prettierd.with({
 					filetypes = {

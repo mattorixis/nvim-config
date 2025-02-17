@@ -3,10 +3,8 @@ return {
 	config = function()
 		local lspconfig = require("lspconfig")
 
-		-- Конфигурация для pyright (для Python)
 		lspconfig.pyright.setup({
 			on_attach = function(client, bufnr)
-				-- Действия при подключении
 				print("Pyright подключен!")
 			end,
 			settings = {
@@ -20,10 +18,8 @@ return {
 			capabilities = vim.lsp.protocol.make_client_capabilities(),
 		})
 
-		-- Конфигурация для ccls (для C/C++)
 		lspconfig.ccls.setup({
 			on_attach = function(client, bufnr)
-				-- Действия при подключении
 				print("CCLS подключен!")
 			end,
 			cmd = { "ccls" },
@@ -32,7 +28,7 @@ return {
 				ccls = {
 					cache = { directory = ".ccls-cache" },
 					clang = {
-						extraArgs = { "--std=c++17" }, -- Пример флага компилятора
+						extraArgs = { "--std=c++17" }, -- Пример флага компилятора?
 					},
 				},
 			},
