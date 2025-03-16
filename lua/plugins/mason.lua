@@ -19,10 +19,10 @@ return {
 		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"lua_ls", -- Сервер LSP для Lua (используется, например, в Neovim)
-				"pyright", -- Сервер LSP для Python
+				-- "pyright", -- Сервер LSP для Python
 				"clangd", -- Сервер LSP для C/C++
 				--				"tsserver", -- Сервер LSP для TypeScript/JavaScript
-				"eslint", -- LSP-сервер для диагностики и исправления кода JS/TS
+				-- "eslint", -- LSP-сервер для диагностики и исправления кода JS/TS
 				"rust_analyzer", -- Сервер LSP для Rust
 			},
 			automatic_installation = true, -- Автоматически устанавливать отсутствующие LSP-серверы
